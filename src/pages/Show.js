@@ -5,16 +5,16 @@ const Show = () => {
     return (
         <div>
             <h1>{singleItem.itemName}</h1>
-            <h1>Update Item</h1>
-            <Form action={`/update/${singleItem._id}`} method='post'>
-                <input type='input' name='seller' defaultValue={singleItem.seller} />
-                <input type='input' name='itemName' defaultValue={singleItem.itemName} />
-                <input type='input' name='description' defaultValue={singleItem.description} />
-                <input type='input' name='quantity' defaultValue={singleItem.quantity} />
-                <input type='input' name='price' defaultValue={singleItem.price} />
+            
+            <h3>{singleItem.seller}</h3>
+            <h3>{singleItem.itemName}</h3>
+            <h3>{singleItem.description}</h3>
+            <h3>{singleItem.quantity}</h3>
+            <h3>{singleItem.price}</h3>
+            <Form action={`/update/${singleItem._id}`}>
                 <input type='submit' value={`update ${singleItem.itemName}`}/>
             </Form>
-            <h2>Delete Item</h2>
+                
             <Form action={`/delete/${singleItem._id}`} method='post'>
                 <input type='submit' value={`Delete ${singleItem.itemName}`} />
             </Form>
