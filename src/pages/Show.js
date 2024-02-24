@@ -12,6 +12,7 @@ const Show = () => {
                 <input type='input' name='description' defaultValue={singleItem.description} />
                 <input type='input' name='quantity' defaultValue={singleItem.quantity} />
                 <input type='input' name='price' defaultValue={singleItem.price} />
+                <input type='submit' value={`update ${singleItem.itemName}`}/>
             </Form>
             <h2>Delete Item</h2>
             <Form action={`/delete/${singleItem._id}`} method='post'>
