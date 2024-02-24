@@ -8,11 +8,11 @@ const ShowAll = () => {
                 Add an Item
             </h1>
             <Form>
-                <input type='input' name='seller' placeholder='Seller Name'>Seller</input>
-                <input type='input' name='itemName' placeholder='Item Name'>Item Name</input>
-                <input type='input' name='description' placeholder='Description'>Description</input>
-                <input type='number' name='quantity' placeholder='1'>Quantity</input>
-                <input type='number' name='price' placeholder='10'>Price</input>
+                <input type='input' name='seller' placeholder='Seller Name'/>
+                <input type='input' name='itemName' placeholder='Item Name'/>
+                <input type='input' name='description' placeholder='Description'/>
+                <input type='number' name='quantity' placeholder='1'/>
+                <input type='number' name='price' placeholder='10'/>
             </Form>
 
             <div>
