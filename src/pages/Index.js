@@ -7,12 +7,13 @@ const ShowAll = () => {
             <h1>
                 Add an Item
             </h1>
-            <Form>
+            <Form action={'/create'} method="post">
                 <input type='input' name='seller' placeholder='Seller Name'/>
                 <input type='input' name='itemName' placeholder='Item Name'/>
                 <input type='input' name='description' placeholder='Description'/>
                 <input type='number' name='quantity' placeholder='1'/>
                 <input type='number' name='price' placeholder='10'/>
+                <input type="submit" value={'add item'}/>
             </Form>
 
             <div>
@@ -22,7 +23,7 @@ const ShowAll = () => {
                             return(
                                 <div key={v._id}>
                                     <Link to={`/${v._id}`}>
-                                        <h4>{v.name}</h4>
+                                        <h4>{v.itemName}</h4>
                                     </Link>
                                 </div>
                             )
