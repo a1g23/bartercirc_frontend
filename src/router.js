@@ -3,8 +3,8 @@ import {
   import App from './App';
   import Landing from './pages/Index';
   import Show from './pages/Show';
-  import { barterCircusLoader, barterCircusItemLoader } 
-  import { updateAction, createAction, deleteAction } 
+  import { barterCircusLoader, barterCircusItemLoader } from './loaders'
+  import { updateAction, createAction, deleteAction } from './actions'
   
   const router = createBrowserRouter(
     createRoutesFromElements(
