@@ -7,7 +7,7 @@
 
 **The Barter Circus App will help vendors display items for sale. Think online yard sale!**
 
-**netlify website**
+Deployed Link: https://bartercircus.netlify.app/
 
 ## List of Dependencies
 
