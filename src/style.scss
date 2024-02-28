@@ -1,22 +1,24 @@
 body {
     background-color: aliceblue;
 }
-
+////////////////////////////////////////////////////////////////////
+//FORM
+////////////////////////////////////////////////////////////////////
 .form-class {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     width: 70%;
     margin-bottom: 3rem;
-    
 }
 
 .input-class {
-    
     box-shadow: 0 0 10px gray;
     border-radius: 5px;
     height: 30px;
     border: none;
+    margin: .5rem;
 }
 
 .input-class[type=submit] {
@@ -27,6 +29,9 @@ body {
     background-color: aquamarine;
 }
 
+////////////////////////////////////////////////////////////////////
+//INDEX
+////////////////////////////////////////////////////////////////////
 .item-container {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -46,6 +51,40 @@ body {
     background-color: whitesmoke;
 }
 
+////////////////////////////////////////////////////////////////////
+//SHOW
+////////////////////////////////////////////////////////////////////
+.show-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px gray;
+    background-color: whitesmoke;
+    width: 75vw;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.show-button-container{
+    display: flex;
+}
+.show-update-button, .show-delete-button{
+    padding: .5rem;
+    background-color: lightcyan;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 10px 0px 10px ;
+}
+.show-update-button:hover, .show-delete-button:hover{
+    background-color: aquamarine;
+}
+
+
+////////////////////////////////////////////////////////////////////
+//LINKS
+////////////////////////////////////////////////////////////////////
 .links-container {
     display: flex;
     flex-direction: column;
@@ -69,4 +108,100 @@ body {
 
 .links:hover {
     color:grey;
+}
+////////////////////////////////////////////////////////////////////
+//HEADER
+////////////////////////////////////////////////////////////////////
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-text{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    height: 10rem;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    // display: flex;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    // align-items: center;
+    text-align: center;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seller-profile, .add-items, .login{
+    padding: .5rem;
+    background-color: lightcyan;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    border: none;
+}
+.seller-profile:hover, .add-items:hover, .login:hover{
+    background-color: aquamarine;
+}
+
+
+////////////////////////////////////////////////////////////////////
+//FOOTER
+////////////////////////////////////////////////////////////////////
+.footer{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    bottom: 25px;
+    width: 100vw;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: rgba(255, 250, 243, 0.798);
+    border: 1px solid ;
+}
+.footer-social-links{
+    display: flex;
+    align-items: center;
+}
+.footer-social-links img{
+    height: 1.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.footer-github-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+}
+.footer-github img{
+    height: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.footer-github{
+    display:grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
