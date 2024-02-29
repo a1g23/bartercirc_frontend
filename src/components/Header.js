@@ -27,7 +27,7 @@ const Header = () => {
                 </div>
             </div> */}
             {!hamburgerOpen && 
-            <div>
+            <div className="hamburger-svg">
                 <svg width="25px" height="25px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)" onClick={()=>{toggleMenu()}}>
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
