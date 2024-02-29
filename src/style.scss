@@ -120,7 +120,11 @@ body {
 }
 .mobile-nav-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: auto;
+    position: fixed;
+    right: 30px;
+
 }
 .mobile-nav-container a{
     text-decoration: none;
@@ -167,9 +171,10 @@ body {
 .seller-profile:hover, .add-items:hover, .login:hover{
     background-color: aquamarine;
 }
-// .mobile-nav-container{
-//  display: none;       
-// }
+.hamburger-svg{
+    position: fixed;
+    right: 30px;
+}
 
 
 ////////////////////////////////////////////////////////////////////
@@ -267,6 +272,9 @@ body {
         flex-direction: column;
         z-index: 10;
         justify-content: space-around;
+    }
+    .mobile-nav-link{
+        margin: 5px auto;
     }
     .burger{
         width: 2rem;
